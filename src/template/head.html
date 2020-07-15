@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="icon" type="image/png" href="img/ico32x32.png" >
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script>
+  fetch('http://localhost:3000/css/main.min.css').then(function (response) {
+  if (!response.ok) {
+    throw new TypeError('bad response status');
+  }
+  return  Cache.add('http://localhost:3000/css/main.min.css', response);
+})
+</script>
+
+<title>Onwash APP</title>
